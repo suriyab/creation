@@ -1,0 +1,46 @@
+
+
+<%= form_for @users, :url=>{:controller=>'users',:action => 'create'} do |n| %>
+
+
+
+<div class="field">
+	<%= n.label :Name %><br />
+    <%= n.text_field :name %>
+</div>
+
+<div class="field">
+	<%= n.label :PhoneNumber%><br />
+    <%= n.text_field :phone %>
+	
+</div> 
+<div class="field">
+	<%= n.label :Address%><br />
+    <%= n.text_field :address %>
+	
+</div>
+<div class="field">
+	<%= n.label :skills%><br />
+    <%= n.text_field :skills %>
+	
+</div>
+<div class="field">
+	<%= n.label :Emailid%><br />
+    <%= n.text_field :email %>
+	
+</div>
+<div class="field">
+	<%= n.label :Password%><br />
+    <%= n.password_field :password %>
+	
+</div>
+<div class="field">
+	<%= n.label :confirmpassword%><br />
+    <%= n.password_field :confirmpassword %>
+	
+</div>
+<div class="actions">
+	<%=n.submit 'signin'%>
+	</div>
+	
+<% end %>

@@ -1,0 +1,28 @@
+
+<%= form_for @users, :url=>{:controller=>'users',:action=>'insidelogin'} do |n| %>
+
+<div class="field">
+	<%= n.label :id %><br />
+    <%= n.text_field :name %>
+</div>
+
+<div class="field">
+	<%= n.label :name %><br />
+    <%= n.text_field :name %>
+</div>
+
+<div class="field">
+	<%= n.label :email %><br />
+    <%= n.text_field :email %>
+	
+</div> <div class="field">
+	<%= n.label :password %><br />
+    <%= n.text_field :password %>
+</div>
+
+
+<div class="actions">
+	<%=n.submit 'signin'%>
+	</div>
+	
+<% end %>
